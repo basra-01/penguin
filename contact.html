@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/maincontact.css">
+</head>
+<body>
+  <div class="container">
+    
+      <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    <h1 class="header">Contact Us</h1>
+
+    <main class="main-content">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="afe96764-ddc1-438f-abcb-35f8a8f84f46">
+        <label for="name">Your name</label><br>
+        <input type="text" name="name" required><br><br>
+        <label for="name">Email</label><br>
+        <input type="email" name="email" required><br><br>
+        <label for="name">Message</label><br>
+        <textarea name="message" required></textarea><br>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+       
+        <button type="submit">Submit</button>
+    
+    </form>
+    
+      <section class="map">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps?q=Auckland,+NZ&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Penguin Company. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
