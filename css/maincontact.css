@@ -1,0 +1,26 @@
+.main-content {
+    background-color: #137c79b2;
+    margin: 20px 10%;
+    padding: 10px;
+    gap: 20px;
+    grid-area: maincontent;
+    display: grid;
+    justify-content:space-evenly;
+    justify-items: bottom;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    'contactform map';	
+}
+
+.contact-form {
+    grid-area: contactform;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.map {
+    grid-area: map;
+    text-align: center;
+    
+}
