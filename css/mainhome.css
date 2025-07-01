@@ -1,28 +1,90 @@
-
-.main {
-    background-color: #137c79b2;
-    margin: 30px 10%;
+  .main {
+    margin: 40px 10%;
     padding: 20px;
     grid-area: maincontent;
     display: grid;
-    justify-content:space-evenly;
-    justify-items: left;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+    background-color: rgb(19, 112, 108);
+    justify-content:center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     'hero video';	
-    
-}
+  }
+
+  button {
+   margin: 20px;
+   background-color: rgb(172, 85, 85);
+  border: aliceblue;
+  border-radius: 8px;
+
+  }
 
 .hero {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
     grid-area: hero;
-    padding: 30px;
-    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: #c09898;
     border-radius: 10px;
 }
 
 .video {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
     grid-area: video;
     text-align: center;
 }
 
+@media screen and (max-width: 1400px){
 
+    .hero {
+    width: 100%;
+    height: auto;
+    grid-area: hero;
+    padding: 15px;
+    background-color: #c09898;
+    border-radius: 10px;
+}
+}
+
+@media screen and (max-width: 1000px){
+
+    .hero {
+    width: 100%;
+    height: auto;
+    grid-area: hero;
+    padding: 5px;
+    background-color: #c09898;
+    border-radius: 10px;
+}
+}
+
+@media screen and (max-width: 800px){
+
+    .main {
+        margin: 40px 10%;
+        padding: 20px;
+        grid-area: maincontent;
+        display: grid;
+        gap: 30px;
+        justify-content:center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        'hero'
+        'video';	
+    }
+
+    .hero {
+    width: 100%;
+    height: auto;
+    grid-area: hero;
+    padding: 5px;
+    background-color: #c09898;
+    border-radius: 10px;
+}
+}

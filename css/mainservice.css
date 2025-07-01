@@ -1,3 +1,12 @@
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 50px 0;
+}
+
+  
 .card-container {
   grid-area: maincontent;
   padding: 20px;
@@ -10,11 +19,21 @@
 }
 
 .service-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;}
+
+.service-card {
   border: 1px solid rgb(75, 82, 92);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-  background-color: #137c79b2;
+  background-color: rgb(19, 112, 108);
   color: #ffffff;
   text-align: center;
 }

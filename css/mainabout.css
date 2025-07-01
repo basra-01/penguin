@@ -1,6 +1,45 @@
 
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    background-color: rgb(19, 112, 108);
+  }
+  
+  .article-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .article-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .image {
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 600px;
+    height: auto;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #ffa500;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
 .main-content {
-    background-color:#137c79b2;
     margin: 40px 10%;
     padding: 20px;
     grid-area: maincontent;
