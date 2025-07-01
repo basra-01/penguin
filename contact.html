@@ -7,34 +7,38 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="./css/maincontact.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/map.css">
 </head>
 <body>
-  <div class="container">
-    
-      <ul class="nav">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
+<div class="container">
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="image/logo.png" alt="Penguin Publisher Logo">
+    </a>
+    <ul class="nav">
+      <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="services.html" class="nav-link"><i class="fas fa-cogs"></i>Services</a></li>
+      <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i>About</a></li>
+      <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i>Contact</a></li>
+    </ul>
+    </nav>
     <h1 class="header">Contact Us</h1>
 
     <main class="main-content">
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="afe96764-ddc1-438f-abcb-35f8a8f84f46">
-        <label for="name">Your name</label><br>
-        <input type="text" name="name" required><br><br>
-        <label for="name">Email</label><br>
-        <input type="email" name="email" required><br><br>
-        <label for="name">Message</label><br>
-        <textarea name="message" required></textarea><br>
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-    
-       
-        <button type="submit">Submit</button>
-    
-    </form>
+      
+      <form class="contact-form" action="https://formspree.io/f/mpwryqrr" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
+
+        <input type="submit" value="Send">
+      </form>
     
       <section class="map">
         <h2>Our Location</h2>

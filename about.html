@@ -7,30 +7,34 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="./css/mainabout.css" />
-  
+ 
 </head>
 <body>
   <div class="container">
-    
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="image/logo.png" alt="Penguin Publisher Logo">
+      </a>
       <ul class="nav">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="services.html" class="nav-link"><i class="fas fa-cogs"></i>Services</a></li>
+        <li><a href="about.html" class="nav-link active"><i class="fas fa-user"></i>About</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
       </ul>
+    </nav>
    
 
     <h1 class="header">About Penguin Company</h1>
 
     <main class="main-content">
       <article class="article-content">
-        <p style="color: #555; font-size: 18px; line-height: 1.6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: justify;">Penguin Publishing Company offers a wide variety of fiction, non-fiction, educational, and childrens books.<br>
-           With a strong global presence and a reputation for excellence, Penguin connects authors and readers through high-quality publishing services.<br>
-            Our goal is to inspire a lifelong love of reading worldwide.</p>
+        <p>Every book has a journey and we're here to guide it.
+          From the first draft to the final print, Penguin Publishing supports authors with world-class editing,<br>
+           design, and global distribution.".</p>
         <button onclick="changeColor()">Click to Change Background</button>
       </article>
 
-      <img src="./image/penguin.jpg" class="image" width="600px;" height="350px" alt="penguin">
+      <img src="./image/penguin.jpg" class="image" width="500px;" alt="penguin">
     </main>
 
     <footer>
